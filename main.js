@@ -13,6 +13,7 @@ dotenv.config();
 
 
 let app = express();
+
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -73,7 +74,7 @@ app.use("/api/inqiuiry", InquiryRouter);
 
 //local host connector
 
-app.listen(3000, () => {
+app.listen(3005, () => {
     console.log("server is running");
 });
 

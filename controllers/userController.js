@@ -59,7 +59,7 @@ export function loginUser(req, res) {
                         phoneNum: user.phoneNum
                     },  process.env.JWT_SECRET);
 
-                    res.json({message : "Login successful", jwtToken : jwtToken});
+                    res.json({message : "Login successful", token: token , user: user});
                 }
                 else
                 {
